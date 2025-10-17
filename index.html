@@ -169,11 +169,38 @@
         </section>
       </main>
     </section>
-    <div class="bg-white">
-      <div>
-        <h2>Add New Task</h2>
-        <span>Title</span>
-        <input class="w-[800px] h-[60px]" type="text">
+    <div class="fixed h-[100%] w-[100%] top-0 lef-0 bg-[#0006] z-30"></div>
+    <div
+      class="shadow-md bg-white p-8 fixed z-50 top-[50%] left-[50%] -translate-[50%] flex flex rounded-md"
+    >
+      <div class="flex flex-col gap-3">
+        <h2 class="font-bold text-[20px]">Add New Task</h2>
+        <span class="text-gray-400">Title</span>
+        <input class="p-4 border-1 border-gray-400 h-[60px]" type="text" />
+        <span class="text-gray-400">Description</span>
+        <input class="p-4 border-1 border-gray-400 h-[100px]" type="text" />
+        <span class="text-gray-400">Subtasks</span>
+        <input class="p-4 border-1 border-gray-400 h-[60px]" type="text" />
+        <button
+          class="cursor-pointer font-bold bg-[#f4f7fd] text-[#635fc7] text-[20px] rounded-3xl"
+        >
+          + Add New Subtasks
+        </button>
+        <span class="text-gray-400">Status</span>
+        <select
+          class="p-2 rounded-3xl border-1 border-gray-400 text[#f4f7fd] h-[60px]"
+        >
+          <option value=""></option>
+          <option class="text-gray-400" value="TODO">TODO</option>
+          <option class="text-gray-400" value="doing">DOING</option>
+          <option class="text-gray-400" value="done">DONE</option>
+        </select>
+
+        <button
+          class="cursor-pointer font-bold bg-[#635fc7] w-[750px] h-[60px] text-white text-[25px] rounded-3xl"
+        >
+          Create Task
+        </button>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
